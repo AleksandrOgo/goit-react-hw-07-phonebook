@@ -20,7 +20,7 @@ export const slice = createSlice({
   },
   reducers: {
     addContact(state, action) {
-      state.contacts.push(action.payload);
+      state.contacts = state.contacts.push(action.payload);
     },
     deleteContact(state, action) {
       const index = state.contacts.findIndex(
